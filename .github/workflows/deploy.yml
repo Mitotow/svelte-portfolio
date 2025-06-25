@@ -26,5 +26,5 @@ jobs:
         host: ${{ secrets.SERVER_HOST }}
         username: ${{ secrets.SERVER_USERNAME }}
         key: ${{ secrets.SERVER_SSH_KEY }}
-        source: "build/"
-        target: "/var/www/html"
+        source: ".svelte-kit/output"
+        target: "/home/${{ secrets.SERVER_USERNAME }}/web"
