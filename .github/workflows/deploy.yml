@@ -27,4 +27,4 @@ jobs:
           username: ${{ secrets.SERVER_USERNAME }}
           key: ${{ secrets.SERVER_SSH_KEY }}
           source: "build/*"
-          target: "/var/www/thomas-ambroise.fr/web"
+          target: ${{ secrets.SERVER_PATH }}
