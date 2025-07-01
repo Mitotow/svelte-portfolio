@@ -1,7 +1,7 @@
 <script lang="ts">
 </script>
 
-<span>Portfolio</span>
+<span>Page Work</span>
 
 <style>
 </style>
