@@ -28,5 +28,5 @@ jobs:
           password: ${{ secrets.FTP_PWD }}
           local-dir: ./build/
           server-dir: /sites/thomas-ambroise.fr/
-          protocol: ftp
+          protocol: ftps
           port: 22
