@@ -21,11 +21,12 @@ jobs:
         run: npm run build
         
       - name: Deploy via SFTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
           server: ${{ secrets.FTP_URL }}
           username: ${{ secrets.FTP_USR }}
           password: ${{ secrets.FTP_PWD }}
           local-dir: ./build/
           server-dir: /sites/thomas-ambroise.fr/
-          protocol: sftp
+          protocol: ftps
+          security: strict
